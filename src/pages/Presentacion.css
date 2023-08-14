@@ -1,0 +1,17 @@
+.container-presentacion {
+  height: 100vh;
+  z-index: 1;
+}
+.recuadro1 {
+  width: 60%;
+  height: 40%;
+  background-color: aqua;
+  position: absolute;
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+  .recuadro1 {
+    height: 50%;
+  }
+}

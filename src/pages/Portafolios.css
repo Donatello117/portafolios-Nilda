@@ -1,0 +1,25 @@
+.container-portafolios {
+  height: auto;
+}
+.card-proy {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.card {
+  border-radius: 2px;
+  min-height: 200px;
+  position: relative;
+  background-color: rgb(217, 204, 211);
+  overflow: hidden;
+}
+.Foto-vestido {
+  display: flex;
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  .card-proy {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
