@@ -3,22 +3,29 @@
 }
 .card-proy {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2px;
 }
 .card {
-  border-radius: 2px;
-  min-height: 200px;
-  position: relative;
-  background-color: rgb(217, 204, 211);
-  overflow: hidden;
+  border-radius: 10px;
+  height: 200px;
+  background-color: #d9ccd3;
+}
+.imagen{
+  height: 200px;
+  align-content: center;
 }
 .Foto-vestido {
-  display: flex;
-  height: 100px;
+  height: 10rem;
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 700px) {
+  .card-proy {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 300px) {
   .card-proy {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -1,18 +1,34 @@
 import "./NavBar.css";
 import logo from "../assets/Logo.png";
-
-
+import { AiOutlineMenu } from "react-icons/ai";
 export const NavBar = () => {
   return (
     <div className="Container-navbar">
-      <div className="nav-bar">
+      <div className="nav">
+        <input type="checkbox" id="select" />
+        <label for="select" className="select-btn"><AiOutlineMenu /></label>
         <img src={logo} className="logo-image" />
-        <div className="nav">
-          <div className="menu">
-            <li className="menu-item">Sobre mi</li>
-            <li className="menu-item">Servicios</li>
-            <li className="menu-item">Contacto</li>
-          </div>
+        <div className="nav-menu">
+          <li className="nav-menu-item">
+            <a className="nav-menu-item-a" href="#">
+              Inicio
+            </a>
+          </li>
+          <li className="nav-menu-item">
+            <a className="nav-menu-item-a" href="#">
+              Presentacion
+            </a>
+          </li>
+          <li className="nav-menu-item">
+            <a className="nav-menu-item-a" href="#">
+              Portafolio
+            </a>
+          </li>
+          <li className="nav-menu-item">
+            <a className="nav-menu-item-a" href="#">
+              Contactos
+            </a>
+          </li>
         </div>
       </div>
     </div>
